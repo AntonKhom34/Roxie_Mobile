@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD129FA124139F3A00ECBB72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FA024139F3A00ECBB72 /* AppDelegate.swift */; };
+		CD129FA324139F3A00ECBB72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FA224139F3A00ECBB72 /* SceneDelegate.swift */; };
+		CD129FAA24139F3C00ECBB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD129FA924139F3C00ECBB72 /* Assets.xcassets */; };
+		CD129FAD24139F3C00ECBB72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD129FAB24139F3C00ECBB72 /* LaunchScreen.storyboard */; };
+		CD129FBA2413A33300ECBB72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD129FB92413A33300ECBB72 /* Main.storyboard */; };
+		CD129FBC2413A34500ECBB72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FBB2413A34500ECBB72 /* MainViewController.swift */; };
+		CD129FBE2413A35500ECBB72 /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FBD2413A35500ECBB72 /* MainViewProtocol.swift */; };
+		CD129FC02413A36900ECBB72 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FBF2413A36900ECBB72 /* MainPresenterProtocol.swift */; };
+		CD129FC22413A37300ECBB72 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FC12413A37300ECBB72 /* MainPresenter.swift */; };
+		CD129FC72413A3A500ECBB72 /* MainProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FC62413A3A500ECBB72 /* MainProviderProtocol.swift */; };
+		CD129FC92413A3AE00ECBB72 /* MainProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FC82413A3AE00ECBB72 /* MainProvider.swift */; };
+		CD129FCB2413A3BB00ECBB72 /* MainServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FCA2413A3BB00ECBB72 /* MainServiceProtocol.swift */; };
+		CD129FCD2413A3C500ECBB72 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FCC2413A3C500ECBB72 /* MainService.swift */; };
+		CD129FD02413A8E500ECBB72 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FCF2413A8E500ECBB72 /* ViewControllerFactory.swift */; };
+		CD129FD62413ABA200ECBB72 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD129FD52413ABA200ECBB72 /* OrderDetail.storyboard */; };
+		CD129FD82413ABAB00ECBB72 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FD72413ABAB00ECBB72 /* OrderDetailViewController.swift */; };
+		CD129FDA2413ABB700ECBB72 /* OrderDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FD92413ABB700ECBB72 /* OrderDetailViewProtocol.swift */; };
+		CD129FDC2413ABF900ECBB72 /* OrderDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FDB2413ABF900ECBB72 /* OrderDetailPresenterProtocol.swift */; };
+		CD129FDE2413AC0200ECBB72 /* OrderDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FDD2413AC0200ECBB72 /* OrderDetailPresenter.swift */; };
+		CD129FE42413AC4400ECBB72 /* OrderDetailProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FE32413AC4400ECBB72 /* OrderDetailProviderProtocol.swift */; };
+		CD129FE62413AC4D00ECBB72 /* OrderDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FE52413AC4D00ECBB72 /* OrderDetailProvider.swift */; };
+		CD129FE82413AC6000ECBB72 /* OrderDetailServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FE72413AC6000ECBB72 /* OrderDetailServiceProtocol.swift */; };
+		CD129FEA2413AC6800ECBB72 /* OrderDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FE92413AC6800ECBB72 /* OrderDetailService.swift */; };
+		CD129FED2413AE9200ECBB72 /* AppearanceConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FEC2413AE9200ECBB72 /* AppearanceConfigProtocol.swift */; };
+		CD129FEF2413AE9B00ECBB72 /* AppearanceConfigDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FEE2413AE9B00ECBB72 /* AppearanceConfigDefault.swift */; };
+		CD129FF32413B2CC00ECBB72 /* OrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FF12413B2CC00ECBB72 /* OrderInfoTableViewCell.swift */; };
+		CD129FF42413B2CC00ECBB72 /* OrderInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD129FF22413B2CC00ECBB72 /* OrderInfoTableViewCell.xib */; };
+		CD129FF62413B39300ECBB72 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FF52413B39300ECBB72 /* OrderModel.swift */; };
+		CD129FF82413B5E000ECBB72 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FF72413B5E000ECBB72 /* ServiceManager.swift */; };
+		CD129FFA2413B86700ECBB72 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FF92413B86700ECBB72 /* AddressModel.swift */; };
+		CD129FFC2413B8A700ECBB72 /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FFB2413B8A700ECBB72 /* PriceModel.swift */; };
+		CD129FFE2413B8FD00ECBB72 /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD129FFD2413B8FD00ECBB72 /* VehicleModel.swift */; };
+		CD12A0022413BE7000ECBB72 /* String(AppSettings).swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12A0012413BE7000ECBB72 /* String(AppSettings).swift */; };
+		CD12A0042413BFA200ECBB72 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD12A0032413BFA200ECBB72 /* Localizable.strings */; };
+		CD12A0062413CA0E00ECBB72 /* Int(AppSettings).swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12A0052413CA0E00ECBB72 /* Int(AppSettings).swift */; };
+		CD12A0082413D90800ECBB72 /* StorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12A0072413D90800ECBB72 /* StorageHelper.swift */; };
+		CD74FD902416392800C211E7 /* RoxieMobileUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74FD8F2416392800C211E7 /* RoxieMobileUserDefaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD129F9D24139F3A00ECBB72 /* Roxie Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roxie Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD129FA024139F3A00ECBB72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD129FA224139F3A00ECBB72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD129FA924139F3C00ECBB72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD129FAC24139F3C00ECBB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD129FAE24139F3C00ECBB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD129FB92413A33300ECBB72 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD129FBB2413A34500ECBB72 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CD129FBD2413A35500ECBB72 /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
+		CD129FBF2413A36900ECBB72 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
+		CD129FC12413A37300ECBB72 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		CD129FC62413A3A500ECBB72 /* MainProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProviderProtocol.swift; sourceTree = "<group>"; };
+		CD129FC82413A3AE00ECBB72 /* MainProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProvider.swift; sourceTree = "<group>"; };
+		CD129FCA2413A3BB00ECBB72 /* MainServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServiceProtocol.swift; sourceTree = "<group>"; };
+		CD129FCC2413A3C500ECBB72 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		CD129FCF2413A8E500ECBB72 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		CD129FD52413ABA200ECBB72 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
+		CD129FD72413ABAB00ECBB72 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		CD129FD92413ABB700ECBB72 /* OrderDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewProtocol.swift; sourceTree = "<group>"; };
+		CD129FDB2413ABF900ECBB72 /* OrderDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		CD129FDD2413AC0200ECBB72 /* OrderDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailPresenter.swift; sourceTree = "<group>"; };
+		CD129FE32413AC4400ECBB72 /* OrderDetailProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailProviderProtocol.swift; sourceTree = "<group>"; };
+		CD129FE52413AC4D00ECBB72 /* OrderDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailProvider.swift; sourceTree = "<group>"; };
+		CD129FE72413AC6000ECBB72 /* OrderDetailServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailServiceProtocol.swift; sourceTree = "<group>"; };
+		CD129FE92413AC6800ECBB72 /* OrderDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailService.swift; sourceTree = "<group>"; };
+		CD129FEC2413AE9200ECBB72 /* AppearanceConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigProtocol.swift; sourceTree = "<group>"; };
+		CD129FEE2413AE9B00ECBB72 /* AppearanceConfigDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigDefault.swift; sourceTree = "<group>"; };
+		CD129FF12413B2CC00ECBB72 /* OrderInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoTableViewCell.swift; sourceTree = "<group>"; };
+		CD129FF22413B2CC00ECBB72 /* OrderInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderInfoTableViewCell.xib; sourceTree = "<group>"; };
+		CD129FF52413B39300ECBB72 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		CD129FF72413B5E000ECBB72 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		CD129FF92413B86700ECBB72 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		CD129FFB2413B8A700ECBB72 /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
+		CD129FFD2413B8FD00ECBB72 /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
+		CD12A0012413BE7000ECBB72 /* String(AppSettings).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String(AppSettings).swift"; sourceTree = "<group>"; };
+		CD12A0032413BFA200ECBB72 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CD12A0052413CA0E00ECBB72 /* Int(AppSettings).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int(AppSettings).swift"; sourceTree = "<group>"; };
+		CD12A0072413D90800ECBB72 /* StorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHelper.swift; sourceTree = "<group>"; };
+		CD74FD8F2416392800C211E7 /* RoxieMobileUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoxieMobileUserDefaults.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD129F9A24139F3A00ECBB72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD129F9424139F3A00ECBB72 = {
+			isa = PBXGroup;
+			children = (
+				CD129F9F24139F3A00ECBB72 /* Roxie Mobile */,
+				CD129F9E24139F3A00ECBB72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD129F9E24139F3A00ECBB72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD129F9D24139F3A00ECBB72 /* Roxie Mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD129F9F24139F3A00ECBB72 /* Roxie Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FFF2413BE5400ECBB72 /* Extentions */,
+				CD129FEB2413AE6500ECBB72 /* AppearanceConfig */,
+				CD129FCE2413A8BF00ECBB72 /* Helpers */,
+				CD129FB42413A30700ECBB72 /* Scence */,
+				CD129FA024139F3A00ECBB72 /* AppDelegate.swift */,
+				CD129FA224139F3A00ECBB72 /* SceneDelegate.swift */,
+				CD129FCF2413A8E500ECBB72 /* ViewControllerFactory.swift */,
+				CD129FA924139F3C00ECBB72 /* Assets.xcassets */,
+				CD129FAB24139F3C00ECBB72 /* LaunchScreen.storyboard */,
+				CD129FAE24139F3C00ECBB72 /* Info.plist */,
+				CD12A0032413BFA200ECBB72 /* Localizable.strings */,
+			);
+			path = "Roxie Mobile";
+			sourceTree = "<group>";
+		};
+		CD129FB42413A30700ECBB72 /* Scence */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FD12413AB7B00ECBB72 /* OrderDetail */,
+				CD129FB52413A30E00ECBB72 /* Main */,
+			);
+			path = Scence;
+			sourceTree = "<group>";
+		};
+		CD129FB52413A30E00ECBB72 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FB62413A31400ECBB72 /* Presenter */,
+				CD129FB72413A31A00ECBB72 /* Model */,
+				CD129FB82413A32000ECBB72 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CD129FB62413A31400ECBB72 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FBF2413A36900ECBB72 /* MainPresenterProtocol.swift */,
+				CD129FC12413A37300ECBB72 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CD129FB72413A31A00ECBB72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FC32413A37900ECBB72 /* Provider */,
+				CD129FC42413A38100ECBB72 /* Service */,
+				CD129FC52413A38900ECBB72 /* Models */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD129FB82413A32000ECBB72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FF02413B2A700ECBB72 /* Cell */,
+				CD129FBD2413A35500ECBB72 /* MainViewProtocol.swift */,
+				CD129FBB2413A34500ECBB72 /* MainViewController.swift */,
+				CD129FB92413A33300ECBB72 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD129FC32413A37900ECBB72 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FC62413A3A500ECBB72 /* MainProviderProtocol.swift */,
+				CD129FC82413A3AE00ECBB72 /* MainProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		CD129FC42413A38100ECBB72 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FCA2413A3BB00ECBB72 /* MainServiceProtocol.swift */,
+				CD129FCC2413A3C500ECBB72 /* MainService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD129FC52413A38900ECBB72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FF52413B39300ECBB72 /* OrderModel.swift */,
+				CD129FF92413B86700ECBB72 /* AddressModel.swift */,
+				CD129FFB2413B8A700ECBB72 /* PriceModel.swift */,
+				CD129FFD2413B8FD00ECBB72 /* VehicleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD129FCE2413A8BF00ECBB72 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FF72413B5E000ECBB72 /* ServiceManager.swift */,
+				CD12A0072413D90800ECBB72 /* StorageHelper.swift */,
+				CD74FD8F2416392800C211E7 /* RoxieMobileUserDefaults.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CD129FD12413AB7B00ECBB72 /* OrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FD42413AB8C00ECBB72 /* Presenter */,
+				CD129FD32413AB8A00ECBB72 /* Model */,
+				CD129FD22413AB8800ECBB72 /* View */,
+			);
+			path = OrderDetail;
+			sourceTree = "<group>";
+		};
+		CD129FD22413AB8800ECBB72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FD92413ABB700ECBB72 /* OrderDetailViewProtocol.swift */,
+				CD129FD72413ABAB00ECBB72 /* OrderDetailViewController.swift */,
+				CD129FD52413ABA200ECBB72 /* OrderDetail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD129FD32413AB8A00ECBB72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FE22413AC0F00ECBB72 /* Provider */,
+				CD129FE12413AC0C00ECBB72 /* Service */,
+				CD129FE02413AC0A00ECBB72 /* Models */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD129FD42413AB8C00ECBB72 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FDB2413ABF900ECBB72 /* OrderDetailPresenterProtocol.swift */,
+				CD129FDD2413AC0200ECBB72 /* OrderDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CD129FE02413AC0A00ECBB72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD129FE12413AC0C00ECBB72 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FE72413AC6000ECBB72 /* OrderDetailServiceProtocol.swift */,
+				CD129FE92413AC6800ECBB72 /* OrderDetailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD129FE22413AC0F00ECBB72 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FE32413AC4400ECBB72 /* OrderDetailProviderProtocol.swift */,
+				CD129FE52413AC4D00ECBB72 /* OrderDetailProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		CD129FEB2413AE6500ECBB72 /* AppearanceConfig */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FEC2413AE9200ECBB72 /* AppearanceConfigProtocol.swift */,
+				CD129FEE2413AE9B00ECBB72 /* AppearanceConfigDefault.swift */,
+			);
+			path = AppearanceConfig;
+			sourceTree = "<group>";
+		};
+		CD129FF02413B2A700ECBB72 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD129FF12413B2CC00ECBB72 /* OrderInfoTableViewCell.swift */,
+				CD129FF22413B2CC00ECBB72 /* OrderInfoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CD129FFF2413BE5400ECBB72 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CD12A0002413BE6500ECBB72 /* Foundation */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		CD12A0002413BE6500ECBB72 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CD12A0012413BE7000ECBB72 /* String(AppSettings).swift */,
+				CD12A0052413CA0E00ECBB72 /* Int(AppSettings).swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD129F9C24139F3A00ECBB72 /* Roxie Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD129FB124139F3C00ECBB72 /* Build configuration list for PBXNativeTarget "Roxie Mobile" */;
+			buildPhases = (
+				CD129F9924139F3A00ECBB72 /* Sources */,
+				CD129F9A24139F3A00ECBB72 /* Frameworks */,
+				CD129F9B24139F3A00ECBB72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roxie Mobile";
+			productName = "Roxie Mobile";
+			productReference = CD129F9D24139F3A00ECBB72 /* Roxie Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD129F9524139F3A00ECBB72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Антон Хомяков";
+				TargetAttributes = {
+					CD129F9C24139F3A00ECBB72 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CD129F9824139F3A00ECBB72 /* Build configuration list for PBXProject "Roxie Mobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD129F9424139F3A00ECBB72;
+			productRefGroup = CD129F9E24139F3A00ECBB72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD129F9C24139F3A00ECBB72 /* Roxie Mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD129F9B24139F3A00ECBB72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD129FD62413ABA200ECBB72 /* OrderDetail.storyboard in Resources */,
+				CD12A0042413BFA200ECBB72 /* Localizable.strings in Resources */,
+				CD129FBA2413A33300ECBB72 /* Main.storyboard in Resources */,
+				CD129FAD24139F3C00ECBB72 /* LaunchScreen.storyboard in Resources */,
+				CD129FAA24139F3C00ECBB72 /* Assets.xcassets in Resources */,
+				CD129FF42413B2CC00ECBB72 /* OrderInfoTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD129F9924139F3A00ECBB72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD129FE62413AC4D00ECBB72 /* OrderDetailProvider.swift in Sources */,
+				CD129FD82413ABAB00ECBB72 /* OrderDetailViewController.swift in Sources */,
+				CD129FC02413A36900ECBB72 /* MainPresenterProtocol.swift in Sources */,
+				CD129FC22413A37300ECBB72 /* MainPresenter.swift in Sources */,
+				CD129FFA2413B86700ECBB72 /* AddressModel.swift in Sources */,
+				CD74FD902416392800C211E7 /* RoxieMobileUserDefaults.swift in Sources */,
+				CD129FFC2413B8A700ECBB72 /* PriceModel.swift in Sources */,
+				CD12A0022413BE7000ECBB72 /* String(AppSettings).swift in Sources */,
+				CD129FBC2413A34500ECBB72 /* MainViewController.swift in Sources */,
+				CD129FDC2413ABF900ECBB72 /* OrderDetailPresenterProtocol.swift in Sources */,
+				CD129FBE2413A35500ECBB72 /* MainViewProtocol.swift in Sources */,
+				CD129FCB2413A3BB00ECBB72 /* MainServiceProtocol.swift in Sources */,
+				CD129FE82413AC6000ECBB72 /* OrderDetailServiceProtocol.swift in Sources */,
+				CD129FED2413AE9200ECBB72 /* AppearanceConfigProtocol.swift in Sources */,
+				CD129FA124139F3A00ECBB72 /* AppDelegate.swift in Sources */,
+				CD129FF82413B5E000ECBB72 /* ServiceManager.swift in Sources */,
+				CD129FF62413B39300ECBB72 /* OrderModel.swift in Sources */,
+				CD129FEA2413AC6800ECBB72 /* OrderDetailService.swift in Sources */,
+				CD129FFE2413B8FD00ECBB72 /* VehicleModel.swift in Sources */,
+				CD129FE42413AC4400ECBB72 /* OrderDetailProviderProtocol.swift in Sources */,
+				CD129FCD2413A3C500ECBB72 /* MainService.swift in Sources */,
+				CD129FDE2413AC0200ECBB72 /* OrderDetailPresenter.swift in Sources */,
+				CD129FC92413A3AE00ECBB72 /* MainProvider.swift in Sources */,
+				CD129FC72413A3A500ECBB72 /* MainProviderProtocol.swift in Sources */,
+				CD129FA324139F3A00ECBB72 /* SceneDelegate.swift in Sources */,
+				CD129FF32413B2CC00ECBB72 /* OrderInfoTableViewCell.swift in Sources */,
+				CD129FEF2413AE9B00ECBB72 /* AppearanceConfigDefault.swift in Sources */,
+				CD12A0062413CA0E00ECBB72 /* Int(AppSettings).swift in Sources */,
+				CD129FD02413A8E500ECBB72 /* ViewControllerFactory.swift in Sources */,
+				CD129FDA2413ABB700ECBB72 /* OrderDetailViewProtocol.swift in Sources */,
+				CD12A0082413D90800ECBB72 /* StorageHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD129FAB24139F3C00ECBB72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD129FAC24139F3C00ECBB72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD129FAF24139F3C00ECBB72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD129FB024139F3C00ECBB72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD129FB224139F3C00ECBB72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Roxie Mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Roxie-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD129FB324139F3C00ECBB72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Roxie Mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Roxie-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD129F9824139F3A00ECBB72 /* Build configuration list for PBXProject "Roxie Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD129FAF24139F3C00ECBB72 /* Debug */,
+				CD129FB024139F3C00ECBB72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD129FB124139F3C00ECBB72 /* Build configuration list for PBXNativeTarget "Roxie Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD129FB224139F3C00ECBB72 /* Debug */,
+				CD129FB324139F3C00ECBB72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD129F9524139F3A00ECBB72 /* Project object */;
+}

@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  Roxie Mobile
+
+  Created by Антон Хомяков on 07.03.2020.
+  Copyright © 2020 Антон Хомяков. All rights reserved.
+*/
+
+
+// MARK: - Main Screen
+
+"Main_StartAdress" = "Начальный адрес: ";
+"Main_EndAdress" = "Конечный адрес: ";
+"Main_Date" = "Дата поездки: ";
+"Main_Cost" = "Стоимость заказа: ";
+
+// MARK: - Order Detail
+
+"OrderDetail_Title" = "Заказы";
+"OrderDetail_StartAdress" = "Начальный адрес: ";
+"OrderDetail_EndAdress" = "Конечный адрес: ";
+"OrderDetail_Date" = "Дата поездки: ";
+"OrderDetail_Cost" = "Стоимость заказа: ";
+"OrderDetail_Name" = "Водитель: ";
